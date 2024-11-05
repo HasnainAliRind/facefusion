@@ -11,9 +11,8 @@ const __dirname = dirname(__filename);
 
 let app = express();
 
-// dotenv.config()
-
 app.use(cors());
+app.use(express.json());
 
 initWebRoutes(app);
 
